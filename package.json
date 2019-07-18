@@ -1,0 +1,30 @@
+{
+  "name": "myxmerchant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@vue/cli": "^3.9.3",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "jshint": "^2.10.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "vue-sidebar-menu": "^3.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d dist/",
+    "serve": "babel -w src/ -d dist/ | nodemon --watch dist"
+  },
+  "author": "Tze <tze@example.com> (example.com)",
+  "license": "MIT",
+  "description": ""
+}

@@ -1,0 +1,43 @@
+<html>
+    <style>
+        body {
+            background-color:#FFFFFF;
+        }
+    </style>
+<head> 
+    <title>Myx Menu Upload and Modification</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="font-size:1.2rem">Myx Merchant Systems</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="stall.html">Profile</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li class="active"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="stall_credentials" class="row">
+        <div class="input-field col s6">
+            <input placeholder="" id="stall_uid" type="text" class="validate">
+            <label for="stall_uid">Stall User ID (Provided)</label>
+        </div>
+        <div class="input-field col s6">
+            <input placeholder="" id="stall_pw" type="text" class="validate">
+            <label for="stall_pw">Stall Password</label>
+        </div>
+        <div class="input-field col s6" id="login_button">
+            <a class="waves-effect waves-light btn-small blue">Login and Load</a>
+        </div>
+    </div>
+</body>

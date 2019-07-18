@@ -1,0 +1,160 @@
+<!-- Myx Merchant Menu Upload and Modification Portal -->
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color:#FFFFFF;
+        }
+    </style>
+<head> 
+    <title>Myx Menu Upload and Modification</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/menu.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="lue nav-wrapper">
+            <a href="#" class="brand-logo" style="font-size:1.2rem; margin-left:1rem">Myx Merchant Systems</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="menu.html">Menu</a></li>
+            <li><a href="stall.html">Profile</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="form_container" style="margin-top:2em">
+        <div class="row" id="category_holder">
+            <!-- CATEGORY CARD -->
+            <div class="col s6">
+                <div class="card red darken-4">
+                    <div class="card-content white-text">
+                        <span style="text-align:center" class="card-title" id="category_1_title">
+                            Starters
+                        </span>
+                        <div class="row" id="category_1_card_holder">
+                            <!-- ITEM CARD -->
+                            <div class="col s12">
+                                <div class="card white darken-1">
+                                    <div class="card-content black-text">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th colspan=3 style="text-align: center">
+                                                        <input style="font-size:1.4em; margin:0; border:0; color:black; text-align:center" placeholder="Individual Item Name, e.g. 'Earl Grey Milk Tea'" type="text" class="validate">
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- PRICE -->
+                                                <tr>
+                                                    <th style="width:10%"">Price</th>
+                                                    <td><input placeholder="Input Base Price Here" type="text" class="validate"></td>
+                                                </tr>
+                                                <!-- COMPULSORY OPTIONS -->
+                                                <tr>
+                                                    <th>Required Options</th>
+                                                    <td>
+                                                        <!-- EACH CATEGORY OF OPTIONS HAS ONE TABLE -->
+                                                        <table class="centered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan=3 style="text-align: center">
+                                                                        <input style="font-size:1.2em; margin:0; border:0; color:black; text-align:center" placeholder="Required Option Category, e.g. 'Size'" type="text" class="validate">
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style="width:20%">Choice</th>
+                                                                    <th style="width:40%">Additional Cost</th>
+                                                                    <th style="width:10%"><a class="green waves-effect waves-light btn" onclick="">+</a></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><input class="small_input" placeholder="e.g. 'S'" type="text" class="validate"></td>
+                                                                    <td><input class="small_input" placeholder="e.g. '0.00'" type="text" class="validate"></td>
+                                                                    <td><a class="red waves-effect waves-light btn" onclick="">-</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input class="small_input" placeholder="e.g. 'M'" type="text" class="validate"></td>
+                                                                    <td><input class="small_input" placeholder="e.g. '0.60'" type="text" class="validate"></td>
+                                                                    <td><a class="red waves-effect waves-light btn" onclick="">-</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <a class="add-table blue waves-effect waves-light btn" onclick="">New Required Option Category</a>
+                                                    </td>
+                                                </tr>
+                                                <!-- OPTIONAL OPTIONS -->
+                                                <tr>
+                                                    <th>Add-Ons</th>
+                                                    <td>
+                                                        <!-- EACH CATEGORY OF OPTIONS HAS ONE TABLE -->
+                                                        <table class="centered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan=3 style="text-align: center">
+                                                                        <input style="font-size:1.2em; margin:0; border:0; color:black; text-align:center" placeholder="Add-on Category, e.g. 'Toppings'" type="text" class="validate">
+                                                                    </th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style="width:20%">Choice</th>
+                                                                    <th style="width:40%">Additional Cost</th>
+                                                                    <th style="width:10%"><a class="green waves-effect waves-light btn" onclick="">+</a></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><input class="small_input" placeholder="e.g. 'Pearls'" type="text" class="validate"></td>
+                                                                    <td><input class="small_input" placeholder="e.g. '0.30'" type="text" class="validate"></td>
+                                                                    <td><a class="red waves-effect waves-light btn" onclick="">-</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><input class="small_input" placeholder="e.g. 'Grass Jelly'" type="text" class="validate"></td>
+                                                                    <td><input class="small_input" placeholder="e.g. '0.40'" type="text" class="validate"></td>
+                                                                    <td><a class="red waves-effect waves-light btn" onclick="">-</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <a class="add-table blue waves-effect waves-light btn" onclick="">New Add-on Category</a>
+                                                    </td>
+                                                </tr>
+                                                <!-- IMAGE UPLOAD -->
+                                                <tr>
+                                                    <th>Image</th>
+                                                    <td>
+                                                        <form action="#">
+                                                            <div class="file-field input-field">
+                                                                <div class="btn">
+                                                                    <span>Upload Image</span>
+                                                                    <input type="file">
+                                                                </div>
+                                                                <div class="file-path-wrapper">
+                                                                    <input class="file-path validate" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <a class="add-table orange waves-effect waves-light btn" onclick="">Add Item</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="add-table orange waves-effect waves-light btn" onclick="">Add Category</a>
+    <!-- <button id="submit"></button> -->
+</body>
+</html>

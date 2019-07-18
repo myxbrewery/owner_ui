@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html style="height:100%">
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body style="height:100%">
+        <div id="navbar" style="height:8%">
+            <div class="row" style="margin-bottom:0; height:100%">
+                <div class="col s2" style="border-right: 1px solid lightgray; border-bottom: 1px solid lightgray; height:100%"> 
+                    <p style="padding-left:1rem; line-height:8.5vh; font-size:1.5rem; color:darkslategray">Myx</h4>
+                </div>
+                <div class="col s10" style="border-left: 1px solid lightgray; border-bottom: 1px solid lightgray; height:100%">
+                    <div class="row" style="margin-bottom:0; height:100%">
+                        <!-- Search Bar -->
+                        <div class="input-field col s4 headerElem" style="color:lightgray">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" id="autocomplete-input" class="autocomplete" style="height:4vh; font-size:2vh">
+                        </div>
+                        <!-- Page Name -->
+                        <div class="col s5 headerElem" style="font-size:3vh;text-align: center">{{appName}}</div>
+                        <!-- Welcome -->
+                        <div class="col s3 headerElem" style="font-size:2vh;text-align: right; color:grey; line-height:4.5vh; padding-right:4vh;">
+                            Hello, {{username}}
+                        </div>
+                        <i class="material-icons prefix" style="position:absolute;top:2.5vh;right:1vh;">more_vert</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height:90%;">
+            <div class="row" style="height:100%">
+                <div class="col s2" id="sidebar" style="height:100%; border-right: 1px solid lightgray; border-top: 1px solid lightgray; padding-left:2rem;">
+                    <ul>
+                        <li v-for="category in categories">
+                            <sidebar-category v-bind:category="category"></sidebar-category>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s10" id="home" style="border-left: 1px solid lightgray; border-top: 1px solid lightgray; height:100%"">
+                    abcd
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
