@@ -1,5 +1,3 @@
-var API_SOURCE = "https://www.myxbrewapi.com"
-
 function load_menu(){
     if(verify_user()){
         var stall_user_id = document.getElementById("stall_uid").value

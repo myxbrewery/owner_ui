@@ -24,25 +24,13 @@
             <!-- Header Bar (Search//Title//Welcome) -->
             <header-bar id="header-bar" v-bind="properties"></header-bar>
             <!-- Main content -->
-            <div id="home" style="float: left; width:100%; height:90%;">
-                <div class="row" style="height:50%; margin-bottom: 0">
-                    <overview_card :header="header" :chart_data="chart_data" :stats="stats" id='overview'></overview_card>
-                    <order_status :header="header" :stats="stats" id='order_status'></order_status>
-                </div>
-                <div class="row" style="height:50%; margin-bottom: 0">
-                    <thirdcard :header="header" :content="content" id='revenue_value'></thirdcard>
-                    <tx_hist :header="header" :items="items" id='tx_hist'></tx_hist>
-                    <items_sold :header="header" :items="items" id='items_sold'></items_sold>
-                </div>
+            <div style="float: left; width:100%">
+                <menu_table id="menu" v-bind:menu="menu_data"></menu_table>
             </div>
         </div>
     </body>
     <script src="vue_components.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <script src="main.js"></script>
     <script src="sidebar.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="home.js"></script>
+    <script src="menu.js"></script>
 </html>
